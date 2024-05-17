@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Purchase Page</title>
+</head>
+<body>
+    <h2>Product Purchase</h2>
+    <form id="purchaseForm">
+        <label for="productName">Product Name:</label><br>
+        <input type="text" id="productName" name="productName"><br>
+        <label for="productPrice">Price ($):</label><br>
+        <input type="number" id="productPrice" name="productPrice"><br>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" value="1" min="1"><br>
+        <button type="button" onclick="calculateOrder()">Purchase</button>
+    </form>
+
+    <h2>Order Summary Details</h2>
+    <div id="orderSummary">
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
